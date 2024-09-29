@@ -1,0 +1,83 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #121212, #3d3d3d); /* Gradient background */
+    color: #f2f2f2; /* Light text color */
+}
+
+/* Main container styling */
+.container {
+    max-width: 600px; /* Max width of the game container */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: rgba(44, 44, 44, 0.9); /* Semi-transparent dark background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); /* Deeper shadow for more depth */
+}
+
+/* Heading styles */
+h1 {
+    text-align: center; /* Center the heading */
+    color: #ac8eff; /* Pastel peach color */
+    font-size: 2.5rem; /* Larger font size for heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Button styles */
+.button {
+    display: inline-block; /* Allow margin */
+    padding: 20px 40px; /* Increase padding for larger buttons */
+    margin: 15px; /* Margin around buttons */
+    border: none; /* No border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #cb7dff; /* Pastel orange background */
+    color: #2c2c2c; /* Dark text color */
+    font-size: 1.5rem; /* Larger text size for buttons */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.button:hover {
+    background-color: #8f45e4; /* Darker orange on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Centering buttons using Flexbox */
+#game {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center buttons horizontally */
+    flex-wrap: wrap; /* Wrap buttons on smaller screens */
+}
+
+/* Result message styles */
+.result {
+    margin-top: 20px; /* Space above result messages */
+    font-size: 1.5rem; /* Larger text for results */
+    text-align: center; /* Center the results */
+    color: #8543ac; /* Pastel teal color */
+}
+
+/* Additional styling for round messages */
+.round-message {
+    margin-top: 10px; /* Space above round messages */
+    font-size: 1rem; /* Standard text size */
+    color: #73b6f5; /* Pastel yellow */
+    padding: 10px; /* Padding for the message */
+    border: 2px dashed #f18ad2; /* Dashed border for round message */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 215, 64, 0.2); /* Light background for visibility */
+}
+
+/* Scoreboard styling */
+.scoreboard {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    font-size: 1.2rem; /* Score font size */
+    margin-top: 20px; /* Space above scoreboard */
+    padding: 10px; /* Padding around scoreboard */
+    border-top: 2px solid #b76ee7; /* Top border for visual separation */
+}
